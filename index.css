@@ -16,7 +16,7 @@ html { background: white }
    font-weight: 900;
    color: #333;
    margin-bottom: 20px;
-   text-shadow: 3px 3px 2px rgba(150, 146, 148, 1);
+/**   text-shadow: 3px 3px 2px rgba(150, 146, 148, 1);   **/
  }
 
  h2 {
