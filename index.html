@@ -6,15 +6,16 @@
   <title>Child Safety Essentials</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
+  <style>
+  </style>
 </head>
-<body>
+<body class="dark-mode"> <!-- Dark mode by default -->
   <div class="grid-container">
     <div class="item1">
       <!-- Dark Mode Toggle -->
       <div class="dark-mode-toggle">
         <label class="toggle-switch">
-          <input type="checkbox" id="darkModeToggle">
+          <input type="checkbox" id="darkModeToggle" checked> <!-- Checked by default -->
           <span class="slider"></span>
         </label>
       </div>
@@ -101,22 +102,24 @@
   <script>
     const darkModeToggle = document.getElementById('darkModeToggle');
     const body = document.body;
-    const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
-    const currentTheme = localStorage.getItem('theme');
-    if (currentTheme === 'dark' || (!currentTheme && prefersDarkScheme.matches)) {
-      body.classList.add('dark-mode');
-      darkModeToggle.checked = true;
-    }
+    
+    // Set default to dark mode
+    body.classList.add('dark-mode');
+    darkModeToggle.checked = true;
+    localStorage.setItem('theme', 'dark');
+    
+    // Toggle functionality
     darkModeToggle.addEventListener('change', function() {
       if (this.checked) {
+        body.classList.remove('light-mode');
         body.classList.add('dark-mode');
         localStorage.setItem('theme', 'dark');
       } else {
         body.classList.remove('dark-mode');
+        body.classList.add('light-mode');
         localStorage.setItem('theme', 'light');
       }
     });
   </script>
 </body>
 </html>
-
