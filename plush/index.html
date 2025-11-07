@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Child Gift Ideas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="grid-container">
+
+
+    <div class="item1">
+      <!-- Dark Mode Toggle -->
+      <div class="dark-mode-toggle">
+        <label class="toggle-switch">
+          <input type="checkbox" id="darkModeToggle">
+          <span class="slider"></span>
+        </label>
+      </div>
+      <!-- Main Header -->
+      <div class="main-header">
+        <i class="fas fa-gifts"></i><br>
+        Gifts Ideas<br>
+        <span>For the "Little One"</span>
+      </div><div style="height:20px;"></div><hr><div style="height:20px;"></div>
+      <div class="section-spacing"></div>
+<!------------------------------------------------------- Product 1 --------------------------------------------->
+<!--------------------------------------------------------------------------------------------------------------->
+      <div class="product-card">
+        <h2 class="product-title">
+          <i class="fas fa"></i> Rose Unicorn Bouquet
+        </h2>
+        <img src="https://4akid.co.za/cdn/shop/products/rose-unicorn-bouquet-4akid-4.jpg?v=1707386412" alt="Rose Unicorn Bouquet" class="product-image">
+        <p class="product-description">
+          Cute & cuddly.
+        </p>
+        <div class="price-tag">R200.00</div>
+        <a href="https://4akid.co.za/products/rose-unicorn-assorted-colours?srsltid=AfmBOor5gi-PytOJlepYhFnm1c8q9Ivj4i2nRdTETxoHTsb830YPExlR&variant=39400039579684/?ref=wzmpfjkx" target="_blank" class="product-link">
+          <i class="fas fa-shopping-cart"></i> Buy Now
+        </a>
+      </div>
+      <hr class="product-divider">
+<!------------------------------------------------------- Product 2 --------------------------------------------->
+<!--------------------------------------------------------------------------------------------------------------->
+
+      <div class="product-card">
+        <h2 class="product-title">
+          <i class="fas fa-"></i> 2 in 1 Baby Sofa and Lounger
+        </h2>
+        <img src="https://4akid.co.za/cdn/shop/files/23-in-1BabySofaRabbit.jpg?v=1731853393&width=600" alt="2 in 1 lounger" class="product-image">
+        <p class="product-description">
+          Nice & adorable rabbit with 2 in 1 function cosy sofa & sleep lounger.
+        </p>
+        <div class="price-tag">R1650.00</div>
+        <a href="https://4akid.co.za/products/2-in-1-baby-sofa-and-lounger-rabbit/?ref=wzmpfjkx" target="_blank" class="product-link">
+          <i class="fas fa-shopping-cart"></i> Buy Now
+        </a>
+      </div>
+      <hr class="product-divider">
+<!------------------------------------------------------- Product 3 --------------------------------------------->
+<!--------------------------------------------------------------------------------------------------------------->
+
+      <div class="product-card">
+        <h2 class="product-title">
+          <i class="fas fa"></i> 170cm Sprinkler Pad
+        </h2>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJmwH4bPbfkhIYjBNq-01jLBwf1Ia-SlHonw&s" alt="Sprinkler Pad" class="product-image">
+        <p class="product-description">
+          For those hot summer days. Keeping them cool & safe.
+        </p>
+        <div class="price-tag">R330.00</div>
+        <a href="https://4akid.co.za/products/jeronimo-sprinkler-pad-blue/?ref=wzmpfjkx" target="_blank" class="product-link">
+          <i class="fas fa-shopping-cart"></i> Buy Now
+        </a>
+      </div>
+      <hr class="product-divider">
+<!------------------------------------------------------- Product 4 --------------------------------------------->
+<!--------------------------------------------------------------------------------------------------------------->
+
+      <div class="product-card">
+        <h2 class="product-title">
+          Baby Animal Plush Sofa
+        </h2>
+        <img src="https://4akid.co.za/cdn/shop/files/baby-animal-plush-sofa-4akid-1.webp?v=1704338797" alt="Animal Plush Sofa" class="product-image">
+        <p class="product-description">
+          Adorable & cute plush sofa.
+        </p>
+        <div class="price-tag">R497.00</div>
+        <a href="https://4akid.co.za/products/baby-animal-plush-sofa?srsltid=AfmBOor8W6wUA316nIALx2Wx7qUu2pgeVtnhgbDum0amuQ3lwteEUMur&variant=46619201405203/?ref=wzmpfjkx" target="_blank" class="product-link">
+          <i class="fas fa-shopping-cart"></i> Buy Now
+        </a>
+      </div>
+    </div>
+
+
+    <div class="item2"></div>
+    <div class="item3"></div>
+    <div class="item4"></div>
+    <div class="item5">© 2025 Child Safety Essentials. All Rights Reserved.</div>
+  </div>
+  <script>
+    const darkModeToggle = document.getElementById('darkModeToggle');
+    const body = document.body;
+    
+    // Set default to dark mode
+    body.classList.add('dark-mode');
+    darkModeToggle.checked = true;
+    localStorage.setItem('theme', 'dark');
+    
+    // Toggle functionality
+    darkModeToggle.addEventListener('change', function() {
+      if (this.checked) {
+        body.classList.remove('light-mode');
+        body.classList.add('dark-mode');
+        localStorage.setItem('theme', 'dark');
+      } else {
+        body.classList.remove('dark-mode');
+        body.classList.add('light-mode');
+        localStorage.setItem('theme', 'light');
+      }
+    });
+  </script>
+</body>
+</html>
+
