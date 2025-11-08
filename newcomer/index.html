@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Child Gift Ideas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="grid-container">
+
+
+    <div class="item1">
+      <!-- Dark Mode Toggle -->
+      <div class="dark-mode-toggle">
+        <label class="toggle-switch">
+          <input type="checkbox" id="darkModeToggle">
+          <span class="slider"></span>
+        </label>
+      </div>
+      <!-- Main Header -->
+      <div class="main-header">
+        <i class="fas fa-gifts"></i><br>
+        Newcomer<br>
+        <span>Gift Ideas</span>
+      </div><div style="height:20px;"></div><hr><div style="height:20px;"></div>
+      <div class="section-spacing"></div>
+<!------------------------------------------------------- Product 1 --------------------------------------------->
+<!--------------------------------------------------------------------------------------------------------------->
+      <div class="product-card">
+        <h2 class="product-title">
+          <i class="fas fa"></i> Baby Diaper Backpack Bag – Stylish, Spacious, and Practical for Busy Parents
+        </h2>
+        <img src="https://4akid.co.za/cdn/shop/files/peach-4akid-backpack-baby-diaper-bag-4akid-1.jpg?v=1704331408" alt="Rose Unicorn Bouquet" class="product-image">
+        <p class="product-description">
+          Stylish, practical and durable, this Peach Backpack Baby Bag has a large capacity space to carry both baby & mommy necessities. Ideal for dads too! This awesome multifunctional baby nappy bag is of excellent quality and is waterproof against leaks and spills.
+        </p>
+        <div class="price-tag">R349.00</div>
+        <a href="https://4akid.co.za/products/backpack-baby-bag-peach?srsltid=AfmBOoqNISvjq_4VcNxkZAsJD7eZAQLUicTboLu-awbIHnaVp13HKrtX/?ref=wzmpfjkx" target="_blank" class="product-link">
+          <i class="fas fa-shopping-cart"></i> Buy Now
+        </a>
+      </div>
+      <hr class="product-divider">
+<!------------------------------------------------------- Product 2 --------------------------------------------->
+<!--------------------------------------------------------------------------------------------------------------->
+
+      <div class="product-card">
+        <h2 class="product-title">
+          <i class="fas fa-"></i> Baby Cot
+        </h2>
+        <img src="https://4akid.co.za/cdn/shop/files/mastela-3-in-1-deluxe-multi-function-bassinet-electric-baby-rocker-4akid-1.png?v=1704338961&width=600" alt="2 in 1 lounger" class="product-image">
+        <p class="product-description">
+          Mastela 3-in-1 Deluxe Multi-Function Bassinet Electric Baby Rocker
+        </p>
+        <div class="price-tag">R2300.00</div>
+        <a href="https://4akid.co.za/products/mastela-3-in-1-deluxe-multi-function-bassinet-electric-baby-rocker?variant=47552296517907/?ref=wzmpfjkx" target="_blank" class="product-link">
+          <i class="fas fa-shopping-cart"></i> Buy Now
+        </a>
+      </div>
+      <hr class="product-divider">
+<!------------------------------------------------------- Product 3 --------------------------------------------->
+<!--------------------------------------------------------------------------------------------------------------->
+
+      <div class="product-card">
+        <h2 class="product-title">
+          <i class="fas fa"></i> Baby Bear Bucket Hat
+        </h2>
+        <img src="https://4akid.co.za/cdn/shop/products/baby-bear-bucket-hat-4akid-1-22834513739812.jpg?v=1704333180&width=600" alt="Sprinkler Pad" class="product-image">
+        <p class="product-description">
+          Safety and comfort are paramount, and all our baby and toddler clothing is made from soft, breathable, and child-friendly materials.
+        </p>
+        <div class="price-tag">R75.00</div>
+        <a href="https://4akid.co.za/collections/baby-and-toddler-clothing?srsltid=AfmBOoqiSR9pBgGhFGFUDiZyrmrStm7c_7O2yC5CT9H6UBbc_K6sbIhh/?ref=wzmpfjkx" target="_blank" class="product-link">
+          <i class="fas fa-shopping-cart"></i> Buy Now
+        </a>
+      </div>
+      <hr class="product-divider">
+<!------------------------------------------------------- Product 4 --------------------------------------------->
+<!--------------------------------------------------------------------------------------------------------------->
+
+      <div class="product-card">
+        <h2 class="product-title">
+          Silicone Natural Feeding Baby Bottle (Wide-Neck)
+        </h2>
+        <img src="https://4akid.co.za/cdn/shop/files/silicone-natural-feeding-baby-bottle-wide-neck-4akid-6.png?v=1704338968/?ref=wzmpfjkx" alt="Animal Plush Sofa" class="product-image">
+        <p class="product-description">
+          Pure and Safe Material: Crafted with 100% medical-grade silicone, free from harmful chemicals. Your baby deserves the best, and our bottles deliver purity without compromise.
+        </p>
+        <div class="price-tag">R223.00</div>
+        <a href="https://4akid.co.za/products/silicone-natural-feeding-baby-bottle-wide-neck?srsltid=AfmBOooRbgN8-NnLAGSWdZ4MswbHvXoctyotascH4yXUPDZmiJjqr-gz&variant=47538571936019/?ref=wzmpfjkx" target="_blank" class="product-link">
+          <i class="fas fa-shopping-cart"></i> Buy Now
+        </a>
+      </div>
+    </div>
+
+    <!--
+    <div class="item2"></div>
+    <div class="item3"></div>
+    <div class="item4"></div>
+    -->
+    <div class="item5">© 2025 Child Safety Essentials. All Rights Reserved.</div>
+  </div>
+  <script>
+    const darkModeToggle = document.getElementById('darkModeToggle');
+    const body = document.body;
+    
+    // Set default to dark mode
+    body.classList.add('dark-mode');
+    darkModeToggle.checked = true;
+    localStorage.setItem('theme', 'dark');
+    
+    // Toggle functionality
+    darkModeToggle.addEventListener('change', function() {
+      if (this.checked) {
+        body.classList.remove('light-mode');
+        body.classList.add('dark-mode');
+        localStorage.setItem('theme', 'dark');
+      } else {
+        body.classList.remove('dark-mode');
+        body.classList.add('light-mode');
+        localStorage.setItem('theme', 'light');
+      }
+    });
+  </script>
+</body>
+</html>
+
